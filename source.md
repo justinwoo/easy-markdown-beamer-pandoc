@@ -56,7 +56,7 @@ Run `make`, or `make watch` if you want to watch on file changes. Note that I us
 
 nix-shell --run 'watchexec -e md make slides'
 make[1]: Entering directory '/home/justin/Code/easy-markdown-beamer-pandoc'
-pandoc -t beamer README.md -o slides.pdf
+pandoc -t beamer source.md -o slides.pdf
 make[1]: Leaving directory '/home/justin/Code/easy-markdown-beamer-pandoc'
 ```
 
