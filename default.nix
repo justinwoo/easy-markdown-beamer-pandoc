@@ -1,5 +1,5 @@
 let
-  pkgs = import <nixpkgs> {};
+  pkgs = import ./nix/nixpkgs-pinned {};
 
   texlive = pkgs.texlive.combine {
     inherit (pkgs.texlive)

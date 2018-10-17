@@ -29,15 +29,15 @@ Here's a centered image of a ratio of textwidth:
 
 I use nix because I couldn't get a consistent installation of all the tools required otherwise. Get nix here: <https://nixos.org/nix/>
 
-See the contents of `default.nix`, and if you need more packages, try finding by running `nix repl <nixpkgs>;` (note that it's `nix repl`, not `nix-repl`.):
+See the contents of `default.nix`, and if you need more packages, try finding by running `nix repl nix/nixpkgs-pinned` (note that it's `nix repl`, not `nix-repl`.):
 
 ```
-> nix repl '<nixpkgs>'
+> nix repl nix/nixpkgs-pinned
 
 Welcome to Nix version 2.0.4. Type :? for help.
 
-Loading '<nixpkgs>'...
-Added 9535 variables.
+Loading 'nix/nixpkgs-pinned'...
+Added 9438 variables.
 
 nix-repl> texlive.coll<TAB>
 texlive.collcell                     texlive.collection-langitalian
