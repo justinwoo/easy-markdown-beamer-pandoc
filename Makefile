@@ -5,6 +5,8 @@ slides:
 	pandoc -t beamer source.md -o output.pdf
 watch:
 	nix-shell --pure --run 'watchexec -e md make slides'
+repl:
+	nix repl nix/nixpkgs-pinned
 
 NIXPKGS_OWNER?=NixOS
 NIXPKGS_REPO?=nixpkgs
