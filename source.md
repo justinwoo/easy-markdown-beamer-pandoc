@@ -8,6 +8,7 @@ colortheme: dolphin
 fontfamily: noto-sans
 header-includes:
 - \usepackage{cmbright}
+- \usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{wallpaper2.png}}
 fontsize: 10pt
 ---
 
