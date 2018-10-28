@@ -12,6 +12,9 @@ let
     beamer;
   };
 in {
+  inherit pkgs;
+  inherit texlive;
+
   slides = pkgs.stdenv.mkDerivation {
     name = "slides";
     src = ./.;
