@@ -6,6 +6,7 @@ date: 2018 onwards
 theme: Madrid
 colortheme: dolphin
 fontfamily: noto-sans
+aspectratio: 169
 header-includes:
 - \usepackage{cmbright}
 - \usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{wallpaper2.png}}
@@ -23,7 +24,7 @@ data Maybe a = Just a | Nothing
 Here's a centered image of a ratio of textwidth:
 
 \begin{center}
-  \includegraphics[width=0.4\textwidth]{./image.png}
+  \includegraphics[width=0.3\textwidth]{./image.png}
 \end{center}
 
 # Installation
@@ -32,6 +33,7 @@ I use nix because I couldn't get a consistent installation of all the tools requ
 
 See the contents of `default.nix`, and if you need more packages, try finding by running `nix repl nix/nixpkgs-pinned` (note that it's `nix repl`, not `nix-repl`.):
 
+\small
 ```
 > nix repl nix/nixpkgs-pinned
 
