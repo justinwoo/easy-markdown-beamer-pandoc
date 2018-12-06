@@ -17,8 +17,7 @@ in {
 
   slides = pkgs.stdenv.mkDerivation {
     name = "slides";
-    src = ./.;
-
+    phases = [];
     buildInputs = [
       texlive
       pkgs.pandoc
